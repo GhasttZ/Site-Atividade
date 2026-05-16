@@ -1,0 +1,27 @@
+
+> malharia-bonfim-web-app@0.1.0 typecheck
+> tsc --noEmit
+
+app/(dashboard)/calendar/page.tsx(77,50): error TS2339: Property 'event_type' does not exist on type '{ status: "cancelled" | "scheduled" | "confirmed" | "completed"; id: string; tenant_id: string; created_at: Date; updated_at: Date; contact_phone: string | null; contact_name: string; ... 5 more ...; meeting_type: "presencial" | ... 1 more ... | "telefone"; }'.
+app/(dashboard)/calendar/page.tsx(77,69): error TS2339: Property 'event_type' does not exist on type '{ status: "cancelled" | "scheduled" | "confirmed" | "completed"; id: string; tenant_id: string; created_at: Date; updated_at: Date; contact_phone: string | null; contact_name: string; ... 5 more ...; meeting_type: "presencial" | ... 1 more ... | "telefone"; }'.
+app/(dashboard)/calendar/page.tsx(84,30): error TS2339: Property 'location' does not exist on type '{ status: "cancelled" | "scheduled" | "confirmed" | "completed"; id: string; tenant_id: string; created_at: Date; updated_at: Date; contact_phone: string | null; contact_name: string; ... 5 more ...; meeting_type: "presencial" | ... 1 more ... | "telefone"; }'.
+app/(dashboard)/calendar/page.tsx(87,34): error TS2339: Property 'location' does not exist on type '{ status: "cancelled" | "scheduled" | "confirmed" | "completed"; id: string; tenant_id: string; created_at: Date; updated_at: Date; contact_phone: string | null; contact_name: string; ... 5 more ...; meeting_type: "presencial" | ... 1 more ... | "telefone"; }'.
+app/(dashboard)/calendar/page.tsx(90,30): error TS2339: Property 'description' does not exist on type '{ status: "cancelled" | "scheduled" | "confirmed" | "completed"; id: string; tenant_id: string; created_at: Date; updated_at: Date; contact_phone: string | null; contact_name: string; ... 5 more ...; meeting_type: "presencial" | ... 1 more ... | "telefone"; }'.
+app/(dashboard)/calendar/page.tsx(92,34): error TS2339: Property 'description' does not exist on type '{ status: "cancelled" | "scheduled" | "confirmed" | "completed"; id: string; tenant_id: string; created_at: Date; updated_at: Date; contact_phone: string | null; contact_name: string; ... 5 more ...; meeting_type: "presencial" | ... 1 more ... | "telefone"; }'.
+app/(dashboard)/conversations/page.tsx(14,5): error TS2322: Type '"resolved"' is not assignable to type '"active" | "closed" | "handoff" | "all"'.
+app/(dashboard)/knowledge-base/page.tsx(11,3): error TS2353: Object literal may only specify known properties, and 'catalog' does not exist in type 'Record<"politica_pagamento" | "politica_prazo" | "politica_entrega" | "politica_troca" | "faq" | "tom_de_voz" | "sobre_empresa", string>'.
+app/(dashboard)/knowledge-base/page.tsx(18,3): error TS2353: Object literal may only specify known properties, and 'catalog' does not exist in type 'Record<"politica_pagamento" | "politica_prazo" | "politica_entrega" | "politica_troca" | "faq" | "tom_de_voz" | "sobre_empresa", string>'.
+app/(dashboard)/knowledge-base/page.tsx(29,5): error TS2532: Object is possibly 'undefined'.
+components/conversation-bubble.tsx(62,17): error TS2322: Type 'Date' is not assignable to type 'string'.
+components/status-badges.tsx(28,3): error TS2353: Object literal may only specify known properties, and 'failed' does not exist in type 'Record<"expired" | "paid" | "pending" | "refunded", { label: string; variant: StatusVariant; }>'.
+components/status-badges.tsx(53,3): error TS2353: Object literal may only specify known properties, and 'resolved' does not exist in type 'Record<"active" | "closed" | "handoff", { label: string; variant: StatusVariant; }>'.
+lib/repositories/dashboard.ts(141,17): error TS2352: Conversion of type '{ product_name_snapshot: any; subtotal: any; products: { category: any; }[]; }' to type '{ subtotal: number; products: { category: string; } | null; }' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Types of property 'products' are incompatible.
+    Property 'category' is missing in type '{ category: any; }[]' but required in type '{ category: string; }'.
+lib/supabase/middleware.ts(24,16): error TS7006: Parameter 'cookiesToSet' implicitly has an 'any' type.
+lib/supabase/server.ts(25,16): error TS7006: Parameter 'cookiesToSet' implicitly has an 'any' type.
+lib/utils.ts(62,34): error TS2532: Object is possibly 'undefined'.
+lib/utils.ts(63,11): error TS2532: Object is possibly 'undefined'.
+lib/utils.ts(63,11): error TS2532: Object is possibly 'undefined'.
+lib/utils.ts(63,25): error TS2532: Object is possibly 'undefined'.
+lib/utils.ts(63,25): error TS2532: Object is possibly 'undefined'.
